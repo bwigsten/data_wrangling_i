@@ -3,6 +3,8 @@ title: "data_wrangling_i"
 author: "Blair Wigsten"
 date: "9/17/2019"
 output: github_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -24,7 +26,13 @@ pups_data = read_csv(file = "./data_import_examples/FAS_pups.csv")
 pups_data = read_csv(file = "./data_import_examples/FAS_litters.csv")
 pups_data = janitor::clean_names(pups_data)
 pups_data
+
+tail(pups_data)
+skimr::skim(litters_data)
 ```
+
+
+
 
 
 
