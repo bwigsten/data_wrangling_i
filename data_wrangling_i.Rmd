@@ -10,3 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
 ```
+
+#never uuse absolute paths, always use relative paths#
+
+```{r}
+litters_data = read_csv(file = "./data_import_examples/FAS_litters.csv")
+litters_data = janitor::clean_names(litters_data)
+names(litters_data)
+```
